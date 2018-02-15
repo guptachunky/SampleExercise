@@ -35,10 +35,11 @@ public class ReflectionExample {
 		Simple simple2=new Simple();
 		simple2.setName("Danny");
 		
-		Field nameField = simple.getClass().getField("name");
+		Field nameField = simple.getClass().getDeclaredField("name");
 		nameField.setAccessible(true);
 		Object value = nameField.get(simple2);
-		System.out.println(nameField.getType());
+		System.out.println(value);
+		
 	}
 }
 

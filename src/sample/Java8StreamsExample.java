@@ -28,16 +28,21 @@ public class Java8StreamsExample {
 
 	public static void main(String... args) {
 		Java8StreamsExample java8StreamsExample = new Java8StreamsExample();
-//		java8StreamsExample.example1();
-//		java8StreamsExample.example2();
-//		java8StreamsExample.example3();
-//		java8StreamsExample.example4();
-//		java8StreamsExample.example5();
+		java8StreamsExample.example1();
+		System.out.println();
+		java8StreamsExample.example2();
+		System.out.println();
+		java8StreamsExample.example3();
+		System.out.println();
+		java8StreamsExample.example4();
+		System.out.println();
+		java8StreamsExample.example5();
+		System.out.println();
 		java8StreamsExample.example6();
 	}
 
 	private void example1() {
-		List<String> myList = Arrays.asList("a1", "a2", "b1", "c2", "c1");
+		List<String> myList = Arrays.asList("c31", "a2", "b1", "c2", "c1");
 
 		myList.stream().filter(s -> s.startsWith("c")).filter(s -> s.endsWith("1")).sorted().forEach(System.out::println);
 	}
@@ -68,6 +73,11 @@ public class Java8StreamsExample {
 		System.out.println("Person: " + result);
 	}
 }
+
+
+
+
+
 
 
 
